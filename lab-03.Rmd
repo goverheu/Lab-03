@@ -59,6 +59,8 @@ nobel_living_science <- nobel_living_science %>%
     born_country_other = if_else(born_country == "USA", "USA", "Other")
   )
 ```
+
+
 ```{r}
 ggplot(nobel_living_science, aes(x = country_us, fill = born_country_other)) +
   geom_bar() +
